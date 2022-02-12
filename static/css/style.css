@@ -1,0 +1,111 @@
+*{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+li {
+    list-style: none;
+}
+.category-login{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+#carouselExampleIndicators {
+    width: 100%;
+    max-width: 930px;
+    margin: 20px auto 20px auto;
+    padding: 0px 10px 0px 10px;
+}
+.carousel-inner {
+    width: 100%;
+    max-width: 930px;
+    margin: 20px auto 20px auto;
+    border-radius: 8px;
+}
+
+.logo {
+    margin: 10px;
+}
+
+.category-items a:hover {
+    height: 90px;
+    width: 90px;
+    border-radius: 8px;
+    transform: scale(1.2);
+    align-items: center;
+}
+
+.category-items a:active {
+    height: 90px;
+    width: 90px;
+    border-radius: 8px;
+    transform: scale(1.1);
+    background-color: rgba(0, 199, 174, 0.04);
+}
+.qna_complete{
+    color: #00c7ae;
+}
+@media (max-width: 730px) {
+    header {
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+        margin: 10px auto 10px auto;
+        align-items: center;
+    }
+
+    #service-searchbar {
+        max-width: 400px;
+    }
+
+    .category-items {
+        display: grid;
+        justify-items: center;
+    }
+
+    .category {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+    }
+}
+
+@media (min-width: 730px) {
+    .category-items {
+        display: grid;
+        justify-items: center;
+    }
+
+
+    header {
+        display: flex;
+        width: 450px;
+        margin: 10px auto 10px;
+        align-items: center;
+    }
+
+    .category {
+        max-width: 930px;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        justify-items: center;
+        margin: 10px auto 10px;
+    }
+}
+
+.mypost {
+    width: 95%;
+    max-width: 600px;
+    margin: 20px auto 20px auto;
+    padding: 20px;
+    display: none;
+    list-style: none;
+    flex-direction: column;
+}
+
+.mypost > button {
+    margin-top: 15px;
+
+}
